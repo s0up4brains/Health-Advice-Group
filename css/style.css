@@ -142,14 +142,14 @@ body {
 h1 {
   font-size: 64px;
   font-weight: 400;
-  font-family: "Roboto Slab", serif;
+  font-family: "Libre Baskerville", serif;
   color: white;
   text-transform: uppercase;
 }
 h2 {
   font-size: 48px;
   font-weight: 400;
-  font-family: "Roboto Slab", serif;
+  font-family: "Libre Baskerville", serif;
   color: white;
   text-transform: uppercase;
 }
@@ -195,6 +195,7 @@ nav {
 nav ul {
   display: flex;
   list-style: none;
+  align-items: center;
 }
 nav li {
   text-transform: uppercase;
@@ -203,11 +204,19 @@ nav a {
   text-decoration: none;
   color: white;
 }
+.nav-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
 /* Burger Icon styles */
 .burger {
   float: right;
   padding: 20px;
+}
+.burger ul {
+  align-items: end;
 }
 .bar {
   display: block;
@@ -224,17 +233,27 @@ nav a {
   position: fixed;
   right: 10px;
   z-index: 2;
+  margin-top: -25px;
 }
 
 /* Offcanvas Navmenu styles */
+.offcanvas {
+  background: linear-gradient(
+    90deg,
+    rgba(199, 197, 244, 1) 4%,
+    rgba(220, 154, 236, 1) 94%
+  );
+}
 .offcanvas-header {
   flex-direction: row-reverse;
+}
+.offcanvas-header .btn-close {
+  margin: 7px 3px -25px 0px;
 }
 .offcanvas-body {
   display: flex;
   justify-content: flex-end;
   text-align: right;
-  color: white;
   font-size: 30px;
 }
 
@@ -548,7 +567,6 @@ nav a {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 100px;
 }
 .account-btn {
   width: 100px;
@@ -733,7 +751,7 @@ footer p {
 @media screen and (max-width: 750px) {
   /* Mobile logo style */
   .logo {
-    margin: 5px;
+    margin: 10px;
   }
   /* Mobile Nav Styles */
   .main-nav {

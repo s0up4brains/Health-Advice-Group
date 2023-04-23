@@ -20,10 +20,12 @@
 
 <body onload="defaultWeather()">
     <!-- Displays data for london on page load -->
-    <!-- Header -->
+
+    <!-- Navigation -->
     <header>
-        <!-- Navigation -->
-        <?php include "php/nav.php" ?>
+        <div class="nav-top">
+            <?php include "php/nav.php" ?>
+        </div>
     </header>
 
 
