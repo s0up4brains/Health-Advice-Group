@@ -16,19 +16,25 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <!-- Navigation -->
     <header>
-        <?php include "php/nav.php" ?>
+        <div class="nav-top">
+            <?php include "php/nav.php" ?>
+        </div>
         <!-- Page Contents -->
     </header>
     <br>
 
     <main>
-        <div>
-            <h2 class="main-heading">Health Advice Group</h2>
+        <div class="main-heading">
+            <h2>Health Advice Group</h2>
         </div>
         <div class="main-page-body">
             <h5 class="center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi cumque temporibus ad eligendi a aut officia, hic doloribus culpa incidunt asperiores dolore nobis quo iste?</h5>
@@ -66,6 +72,7 @@
             </div>
         </section>
         <?php include "php/contact-table.php" ?>
+        <?php include "php/find-us-table.php" ?>
 
 </body>
 

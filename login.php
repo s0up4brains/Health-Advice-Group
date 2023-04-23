@@ -51,10 +51,11 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") { // Checks the Request Method
 </head>
 
 <body>
-    <!-- Header -->
+    <!-- Navigation -->
     <header>
-        <!-- Navigation -->
-        <?php include "php/nav.php" ?>
+        <div class="nav-top">
+            <?php include "php/nav.php" ?>
+        </div>
     </header>
 
     <?php if ($is_invalid) : ?>

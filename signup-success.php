@@ -20,10 +20,11 @@
 </head>
 
 <body>
-    <!-- Header -->
+    <!-- Navigation -->
     <header>
-        <!-- Navigation -->
-        <?php include "php/nav.php" ?>
+        <div class="nav-top">
+            <?php include "php/nav.php" ?>
+        </div>
     </header>
 
 

@@ -1,14 +1,19 @@
 <!-- Header Navigation for all pages -->
 <!-- Intitialised using php include -->
 
+<!-- LOGO -->
 <a href="index.php"><img class="logo" src="assets/headerlogo.png" alt="Health Advice Group Logo"></a>
+
+<!-- Navigation -->
 <nav class="navbar">
     <div class="main-nav">
         <ul>
             <li><a href="advice.php">Advice</a></li>
             <li><a href="dashboard.php">Dashboard</a></li>
             <li><a href="about.php">About</a></li>
-            <a href="account.php"><img src="assets/user.png"></a>
+            <li>
+                <a href="account.php"><img src="assets/user.png"></a>
+            </li>
         </ul>
     </div>
     <!-- Burger Menu -->

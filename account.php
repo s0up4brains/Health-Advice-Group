@@ -32,10 +32,11 @@ if (isset($_SESSION["user_id"])) {
 </head>
 
 <body>
-    <!-- Header -->
+    <!-- Navigation -->
     <header>
-        <!-- Navigation -->
-        <?php include "php/nav.php" ?>
+        <div class="nav-top">
+            <?php include "php/nav.php" ?>
+        </div>
     </header>
 
 
@@ -70,7 +71,7 @@ if (isset($_SESSION["user_id"])) {
         <p style="margin: 0px 15px;"> or </p>
         <br>
         <button class="account-btn">
-            <a href=" signup.php">Sign up</a>
+            <a href="signup.php">Sign up</a>
         </button>
 
     <?php endif; ?>
